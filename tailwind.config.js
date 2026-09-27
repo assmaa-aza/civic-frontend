@@ -1,0 +1,71 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        navy: {
+          DEFAULT: '#003366',
+          50: '#e6f0fa',
+          100: '#cce0f5',
+          200: '#99c2eb',
+          300: '#66a3e0',
+          400: '#3385d6',
+          500: '#003366',
+          600: '#002b57',
+          700: '#002248',
+          800: '#001a38',
+          900: '#001129',
+        },
+        teal: {
+          DEFAULT: '#00B894',
+          50: '#e6f8f4',
+          100: '#ccf2e9',
+          200: '#99e5d4',
+          300: '#66d7bf',
+          400: '#33caa9',
+          500: '#00B894',
+          600: '#009b7c',
+          700: '#007e65',
+          800: '#00604d',
+          900: '#004336',
+        },
+        gold: {
+          DEFAULT: '#F4B942',
+          50: '#fef8ec',
+          100: '#fdf1d9',
+          200: '#fbe3b3',
+          300: '#f8d58d',
+          400: '#f6c768',
+          500: '#F4B942',
+          600: '#d59b2a',
+          700: '#a9791e',
+          800: '#7d5713',
+          900: '#513608',
+        },
+        background: '#F7F9FC',
+        foreground: '#172033',
+        card: '#FFFFFF',
+        border: '#E5EAF0',
+        muted: '#667085',
+        success: '#00B894',
+        warning: '#F4B942',
+      },
+      fontFamily: {
+        sans: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
+      },
+      boxShadow: {
+        card: '0 8px 30px rgba(0, 51, 102, 0.06)',
+        'card-hover': '0 12px 36px rgba(0, 51, 102, 0.12)',
+        glow: '0 0 20px rgba(0, 184, 148, 0.2)',
+      },
+      borderRadius: {
+        card: '16px',
+      },
+    },
+  },
+  plugins: [],
+}
